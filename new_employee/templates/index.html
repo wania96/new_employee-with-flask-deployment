@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>performance rating MODEL</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body style="background:#00000;">
+ <div class="login">
+	<h1>performance rating classifier</h1>
+   <form action="{{ url_for('predict')}}"method="post">
+   
+        
+        <input type="text" name="Gender" placeholder="Gender" required="required" />
+        <input type="text" name="MaritalStatus" placeholder="MaritalStatus" required="required" />
+        <input type="text" name="Position" placeholder="Position" required="required" />
+        <input type="text" name="Education" placeholder="Education" required="required" />
+        <input type="text" name="EnvironmentSatisfaction" placeholder="EnvironmentSatisfaction" required="required" />
+        <input type="text" name="JobInvolvement" placeholder="JobInvolvement" required="required" />
+        <input type="text" name="JobLevel" placeholder="JobLevel" required="required" />
+        <input type="text" name="JobSatisfaction" placeholder="JobSatisfaction" required="required" />
+        <input type="text" name="RelationshipSatisfaction" placeholder="RelationshipSatisfaction" required="required" />
+        <input type="text" name="TotalWorkingYearsexperience" placeholder="TotalWorkingYearsexperience" required="required" />
+        <input type="text" name="TrainingTimeinmonths" placeholder="TrainingTimeinmonths" required="required" />
+        <input type="text" name="WorkLifeBalance" placeholder="WorkLifeBalance" required="required" />
+        <input type="text" name="Behaviourial_Competence" placeholder="Behaviourial_Competence" required="required" />
+        <input type="text" name="OntimeDelivery" placeholder="OntimeDelivery" required="required" />
+        <input type="text" name="TicketSolvingManagements" placeholder="TicketSolvingManagements" required="required" />
+        <input type="text" name="Working_from_home" placeholder="Working_from_home" required="required" />
+        <input type="text" name="Psycho_social_indicators" placeholder="Psycho_social_indicators" required="required" />
+        <input type="text" name="overtime" placeholder="overtime" required="required" />
+        <input type="text" name="PercentSalaryHike" placeholder="PercentSalaryHike" required="required" />
+        
+        
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">performance rating</button>
+    </form>
+ </div>
+</body>
+</html>
